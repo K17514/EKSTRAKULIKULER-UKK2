@@ -51,10 +51,26 @@ $routes->get('/editekskul/(:num)', 'Ekskul::editview/$1');
 $routes->post('/simpanekskul', 'Ekskul::simpan');
 $routes->get('/deleteekskul/(:num)', 'Ekskul::hapus/$1');
 
+$routes->get('/jadwal', 'Jadwal::index');
+$routes->get('/inputjadwal', 'Jadwal::formjadwal');
+$routes->post('/inputjadwal', 'Jadwal::input');
+$routes->get('/editjadwal/(:num)', 'Jadwal::editview/$1');
+$routes->post('/simpanjadwal', 'Jadwal::simpan');
+$routes->get('/deletejadwal/(:num)', 'Jadwal::hapus/$1');
+
+$routes->get('/daftar', 'Pendaftaran::index');
+$routes->get('/inputdaftar', 'Pendaftaran::formdaftar');
+$routes->post('/inputdaftar', 'Pendaftaran::input');
+$routes->get('/terimadaftar/(:num)', 'Pendaftaran::terima/$1');
+$routes->get('/tolakdaftar/(:num)', 'Pendaftaran::tolak/$1');
+$routes->get('/deletedaftar/(:num)', 'Pendaftaran::hapus/$1');
+
+$routes->get('/absensi', 'Absensi::index');
+$routes->post('/absensi/update', 'Absensi::update');
+
+$routes->get('/penilaian', 'Penilaian::index');
+$routes->post('/penilaian/update', 'Penilaian::update');
+$routes->get('/penilaian/export', 'Penilaian::export');
+
+
 $routes->get('logout', 'Login::logout');
-// $routes->get('home/selesai/(:num)', 'Home::selesai/$1');
-// $routes->get('home/input/', 'Home::inputview');
-// $routes->post('home/input/', 'Home::input');
-// $routes->get('home/edit/(:num)', 'Home::editview/$1');
-// $routes->post('home/simpan/', 'Home::simpan');
-// $routes->get('home/delete/(:num)', 'Home::hapus/$1');

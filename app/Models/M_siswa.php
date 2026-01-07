@@ -31,4 +31,9 @@ class M_siswa extends Model
             ->get()
             ->getResult();
     }
+
+    public function getByUserId($id_user)
+    {
+        return $this->where('id_user', $id_user)->first();
+    }
 }

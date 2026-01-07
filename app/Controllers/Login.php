@@ -75,12 +75,9 @@ class Login extends BaseController
 
 
         /* ================= REDIRECT ================= */
-        if ($user->level == 6) {
-            return redirect()->to('/home/tampiltransaksi');
-        } elseif (in_array($user->level, [3, 4])) {
-            return redirect()->to('/home/tampildata');
-        }
-
+        if ($user->level == 3) {
+            return redirect()->to('/daftar');
+        } 
         return redirect()->to('/home');
     }
 

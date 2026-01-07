@@ -23,6 +23,7 @@ class Siswa extends BaseController
             'username' => $this->request->getPost('username'),
             'email'    => $this->request->getPost('email'),
             'password' => md5($this->request->getPost('password')), // disesuaikan dengan sistemmu
+            'level' => 3
         ];
         $this->muser->insert($userData);
         $id_user = $this->muser->getInsertID();
