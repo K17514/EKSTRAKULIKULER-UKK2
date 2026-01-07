@@ -1,0 +1,298 @@
+CRITICAL - 2026-01-07 02:38:07 --> ErrorException: Undefined variable $kelas
+[Method: GET, Route: tampildata]
+in APPPATH\Views\tampildata.php on line 194.
+ 1 APPPATH\Views\tampildata.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kelas', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\tampildata.php', 194)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\tampildata.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('tampildata', [], true)
+ 5 APPPATH\Controllers\Home.php(42): view('tampildata', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tampildata()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 02:46:13 --> Error: Class "App\Models\M_rombel" not found
+[Method: GET, Route: tampildata]
+in APPPATH\Controllers\Home.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 02:46:22 --> ErrorException: Undefined property: stdClass::$nis
+[Method: GET, Route: tampildata]
+in APPPATH\Views\tampildata.php on line 285.
+ 1 APPPATH\Views\tampildata.php(285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nis', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\tampildata.php', 285)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\tampildata.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('tampildata', [], true)
+ 5 APPPATH\Controllers\Home.php(55): view('tampildata', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tampildata()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 02:47:49 --> ErrorException: Undefined property: stdClass::$id_rombel
+[Method: GET, Route: tampildata]
+in APPPATH\Views\tampildata.php on line 290.
+ 1 APPPATH\Views\tampildata.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_rombel', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\tampildata.php', 290)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\tampildata.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('tampildata', [], true)
+ 5 APPPATH\Controllers\Home.php(55): view('tampildata', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tampildata()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 02:57:44 --> ErrorException: Undefined variable $ekskul
+[Method: GET, Route: tampildata]
+in APPPATH\Views\tampildata.php on line 377.
+ 1 APPPATH\Views\tampildata.php(377): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ekskul', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\tampildata.php', 377)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\tampildata.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('tampildata', [], true)
+ 5 APPPATH\Controllers\Home.php(58): view('tampildata', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tampildata()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 03:01:15 --> Error: Class "App\Controllers\M_ekskul" not found
+[Method: GET, Route: tampildata]
+in APPPATH\Controllers\Home.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 05:44:42 --> ParseError: Unmatched '}'
+[Method: GET, Route: tampildata]
+in APPPATH\Views\tampildata.php on line 93.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('tampildata', [], true)
+ 3 APPPATH\Controllers\Home.php(63): view('tampildata', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tampildata()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 05:44:44 --> ParseError: Unmatched '}'
+[Method: GET, Route: tampildata]
+in APPPATH\Views\tampildata.php on line 93.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('tampildata', [], true)
+ 3 APPPATH\Controllers\Home.php(63): view('tampildata', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->tampildata()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:04:04 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: formdata]
+in APPPATH\Views\inputdatas.php on line 291.
+ 1 APPPATH\Views\inputdatas.php(291): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\inputdatas.php', 291)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\inputdatas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('inputdatas', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('inputdatas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->formdatas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:31:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "eguru.php"
+[Method: GET, Route: editguru/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('eguru.php')
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('eguru', [], true)
+ 3 APPPATH\Controllers\Guru.php(46): view('eguru', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->editview('2')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:31:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "erombel.php"
+[Method: GET, Route: editrombel/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('erombel.php')
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('erombel', [], true)
+ 3 APPPATH\Controllers\Rombel.php(31): view('erombel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Rombel->editview('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rombel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:31:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "eguru.php"
+[Method: GET, Route: editguru/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('eguru.php')
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('eguru', [], true)
+ 3 APPPATH\Controllers\Guru.php(46): view('eguru', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->editview('2')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:37:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "erombel.php"
+[Method: GET, Route: editrombel/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('erombel.php')
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('erombel', [], true)
+ 3 APPPATH\Controllers\Rombel.php(31): view('erombel', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Rombel->editview('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rombel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:42:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "eguru.php"
+[Method: GET, Route: editguru/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('eguru.php')
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('eguru', [], true)
+ 3 APPPATH\Controllers\Guru.php(46): view('eguru', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->editview('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:42:07 --> ErrorException: Undefined variable $child
+[Method: GET, Route: editrombel/1]
+in APPPATH\Views\erombel.php on line 13.
+ 1 APPPATH\Views\erombel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $child', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\erombel.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\erombel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('erombel', [], true)
+ 5 APPPATH\Controllers\Rombel.php(41): view('erombel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Rombel->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rombel))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:42:25 --> ErrorException: Undefined property: stdClass::$nama_guru
+[Method: GET, Route: editrombel/1]
+in APPPATH\Views\erombel.php on line 71.
+ 1 APPPATH\Views\erombel.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_guru', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\erombel.php', 71)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\erombel.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('erombel', [], true)
+ 5 APPPATH\Controllers\Rombel.php(41): view('erombel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Rombel->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rombel))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:44:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "eguru.php"
+[Method: GET, Route: editguru/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('eguru.php')
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('eguru', [], true)
+ 3 APPPATH\Controllers\Guru.php(46): view('eguru', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->editview('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:45:56 --> ErrorException: Undefined property: stdClass::$username
+[Method: GET, Route: editguru/1]
+in APPPATH\Views\eguru.php on line 25.
+ 1 APPPATH\Views\eguru.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$username', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\eguru.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\eguru.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('eguru', [], true)
+ 5 APPPATH\Controllers\Guru.php(46): view('eguru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:49:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "eekskul.php"
+[Method: GET, Route: editekskul/3]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('eekskul.php')
+ 2 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('eekskul', [], true)
+ 3 APPPATH\Controllers\Ekskul.php(30): view('eekskul', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekskul->editview('3')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekskul))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:53:30 --> ErrorException: Undefined variable $guru
+[Method: GET, Route: editekskul/3]
+in APPPATH\Views\eekskul.php on line 36.
+ 1 APPPATH\Views\eekskul.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $guru', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\eekskul.php', 36)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\eekskul.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('eekskul', [], true)
+ 5 APPPATH\Controllers\Ekskul.php(30): view('eekskul', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekskul->editview('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekskul))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:54:17 --> ErrorException: Undefined property: App\Controllers\Ekskul::$mguru
+[Method: GET, Route: editekskul/3]
+in APPPATH\Controllers\Ekskul.php on line 28.
+ 1 APPPATH\Controllers\Ekskul.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ekskul::$mguru', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Controllers\\Ekskul.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekskul->editview('3')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekskul))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-07 06:54:39 --> ErrorException: Undefined property: stdClass::$id_guru
+[Method: GET, Route: editekskul/3]
+in APPPATH\Views\eekskul.php on line 38.
+ 1 APPPATH\Views\eekskul.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_guru', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\eekskul.php', 38)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\eekskul.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('eekskul', [], true)
+ 5 APPPATH\Controllers\Ekskul.php(34): view('eekskul', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekskul->editview('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekskul))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')

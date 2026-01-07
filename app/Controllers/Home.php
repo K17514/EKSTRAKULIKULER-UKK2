@@ -4,6 +4,17 @@ namespace App\Controllers;
 
 use App\Models\M_login;
 use App\Models\M_level;
+use App\Models\M_siswa;
+use App\Models\M_kelas;
+use App\Models\M_jurusan;
+use App\Models\M_rombel;
+use App\Models\M_guru;
+use App\Models\M_ekskul;
+
+
+
+
+
 
 
 class Home extends BaseController
@@ -12,6 +23,14 @@ class Home extends BaseController
     {
         $this->model = new M_login();
         $this->mlevel = new M_level();
+        $this->msiswa = new M_siswa();
+        $this->mkelas = new M_kelas();
+        $this->mjurusan = new M_jurusan();
+        $this->mrombel = new M_rombel();
+        $this->mguru = new M_guru();
+        $this->mekskul = new M_ekskul();
+
+
     }
 
     public function index()
@@ -31,6 +50,13 @@ class Home extends BaseController
         if (in_array(session()->get('level'), [1, 2, 3, 4, 6])) {
             $parent['user'] = $this->model->findAll();
             $parent['level'] = $this->mlevel->findAll();
+            $parent['kelas'] = $this->mkelas->findAll();
+            $parent['jurusan'] = $this->mjurusan->findAll();
+            $parent['siswa'] = $this->msiswa->SiswaData();
+            $parent['rombel'] = $this->mrombel->RombelData();
+            $parent['guru'] = $this->mguru->GuruData();
+            $parent['ekskul'] = $this->mekskul->EkskulData();
+
 
             echo view('header');
             echo view('menu');
@@ -40,14 +66,19 @@ class Home extends BaseController
         }
     }
 
-        public function formdatas()
+    public function formdatas()
     {
         if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4 || session()->get('level') == 6){
-            // $parent['kategori']=$this->model->tampilexist('kategori','id_kategori');
-            // $parent['produk'] = $this->model->tampilexist('produk','id_produk');
+            $parent['rombel'] = $this->mrombel->RombelData();
+            $parent['level'] = $this->mlevel->findAll();
+            $parent['kelas'] = $this->mkelas->findAll();
+            $parent['jurusan'] = $this->mjurusan->findAll();
+            $parent['guru'] = $this->mguru->GuruData();
+            $parent['user'] = $this->model->findAll();
+            $parent['ekskul'] = $this->mekskul->EkskulData();
             echo view('header');
             echo view ('menu');
-            echo view ('inputdatas');
+            echo view ('inputdatas', $parent);
             echo view ('footer');
         }else if (session()->get('level')>0){
             return redirect()->to('/error');
@@ -55,6 +86,7 @@ class Home extends BaseController
             return redirect()->to('/');
         }
     }
+
 
 
     // public function selesai($id)
@@ -109,7 +141,7 @@ class Home extends BaseController
 
     // public function hapus($id)
     // {
-    //     $this->model->delete($id);
+    //     $this->model->delete($id);s
     //     return redirect()->to('')->with('success', 'Product has been soft deleted.');
     // }
 }

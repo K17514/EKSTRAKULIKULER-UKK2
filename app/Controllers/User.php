@@ -5,31 +5,40 @@ namespace App\Controllers;
 use App\Models\M_login;
 use App\Models\M_level;
 
-
 class User extends BaseController
 {
     public function __construct()
     {
-        $this->model = new M_login();
+        $this->model  = new M_login();
         $this->mlevel = new M_level();
     }
 
     public function input()
     {
-        $parent['level'] = $this->mlevel->findAll();
-        $this->model->insert([
+        $foto = $this->request->getFile('foto');
+        $fotoName = null;
+
+        if ($foto && $foto->isValid() && !$foto->hasMoved()) {
+            $fotoName = $foto->getRandomName();
+            $foto->move('uploads/', $fotoName);
+        }
+
+        $data = [
             'username' => $this->request->getPost('username'),
+            'email'    => $this->request->getPost('email'),
             'password' => MD5($this->request->getPost('password')),
-            'email' => $this->request->getPost('email'),
-            'level' => $this->request->getPost('level')
-        ]);
-        return redirect()->to('/tampildata');
+            'level'    => $this->request->getPost('level'),
+            'foto'     => $fotoName,
+        ];
+
+        $this->model->insert($data);
+        return redirect()->to('/tampildata')->with('success', 'User berhasil ditambahkan.');
     }
 
     public function editview($id)
     {
         $parent['level'] = $this->mlevel->findAll();
-        $parent['user'] = $this->model->find($id);
+        $parent['user']  = $this->model->find($id);
 
         echo view('header');
         echo view('euser', $parent);
@@ -45,10 +54,12 @@ class User extends BaseController
             'email'    => $this->request->getPost('email'),
             'level'    => $this->request->getPost('level'),
         ];
+
         $password = $this->request->getPost('password');
         if (!empty($password)) {
-            $data['password'] = password_hash($password, PASSWORD_DEFAULT);
+            $data['password'] = MD5($password);
         }
+
         $this->model->update($id, $data);
 
         return redirect()->to('/tampildata')
@@ -58,6 +69,6 @@ class User extends BaseController
     public function hapus($id)
     {
         $this->model->delete($id);
-        return redirect()->to('/tampildata')->with('success', 'Product has been  deleted.');
+        return redirect()->to('/tampildata')->with('success', 'User berhasil dihapus.');
     }
 }
