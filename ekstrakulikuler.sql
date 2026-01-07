@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2026 at 08:01 AM
+-- Generation Time: Jan 07, 2026 at 05:56 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -34,6 +34,15 @@ CREATE TABLE `absensi_ekskul` (
   `keterangan` enum('Hadir','Izin','Alpha') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `absensi_ekskul`
+--
+
+INSERT INTO `absensi_ekskul` (`id_absen`, `id_daftar`, `tanggal`, `keterangan`) VALUES
+(1, 1, '2026-01-07', 'Hadir'),
+(2, 2, '2026-01-07', 'Izin'),
+(3, 3, '2026-01-07', 'Hadir');
+
 -- --------------------------------------------------------
 
 --
@@ -53,7 +62,9 @@ CREATE TABLE `ekskul` (
 
 INSERT INTO `ekskul` (`id_ekskul`, `nama_ekskul`, `id_instruktur`, `kuota`) VALUES
 (1, 'Pemrograman', 0, 11),
-(3, 'test', 0, 11);
+(3, 'test', 0, 11),
+(6, 'Kerohanian', 3, 5),
+(7, 'Perang', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -73,7 +84,9 @@ CREATE TABLE `guru` (
 --
 
 INSERT INTO `guru` (`id_guru`, `nip`, `nama_guru`, `id_user`) VALUES
-(1, '352352', 'Kalpas', 2);
+(1, '23161016', 'Kalpas', 2),
+(3, '1326943', 'Aponia', 36),
+(4, '574527275', 'Elysia', 39);
 
 -- --------------------------------------------------------
 
@@ -88,6 +101,13 @@ CREATE TABLE `jadwal_ekskul` (
   `jam_mulai` time NOT NULL,
   `jam_selesai` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `jadwal_ekskul`
+--
+
+INSERT INTO `jadwal_ekskul` (`id_jadwal`, `id_ekskul`, `hari`, `jam_mulai`, `jam_selesai`) VALUES
+(1, 6, 'Senin', '15:10:00', '17:00:00');
 
 -- --------------------------------------------------------
 
@@ -163,8 +183,18 @@ CREATE TABLE `nilai_ekskul` (
   `id_daftar` int(11) NOT NULL,
   `nilai` decimal(5,2) DEFAULT NULL,
   `predikat` char(2) DEFAULT NULL,
-  `catatan` text DEFAULT NULL
+  `catatan` text DEFAULT NULL,
+  `bulan` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `nilai_ekskul`
+--
+
+INSERT INTO `nilai_ekskul` (`id_nilai`, `id_daftar`, `nilai`, `predikat`, `catatan`, `bulan`) VALUES
+(4, 3, 80.00, 'A', 'huh', '0000-00-00'),
+(5, 1, 80.00, 'C', 'ok', '0000-00-00'),
+(6, 2, 80.00, 'C', 'ok', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -176,9 +206,18 @@ CREATE TABLE `pendaftaran_ekskul` (
   `id_daftar` int(11) NOT NULL,
   `id_siswa` int(11) NOT NULL,
   `id_ekskul` int(11) NOT NULL,
-  `tanggal_daftar` date NOT NULL,
+  `tanggal_daftar` date NOT NULL DEFAULT current_timestamp(),
   `status` enum('pending','disetujui','ditolak') DEFAULT 'pending'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pendaftaran_ekskul`
+--
+
+INSERT INTO `pendaftaran_ekskul` (`id_daftar`, `id_siswa`, `id_ekskul`, `tanggal_daftar`, `status`) VALUES
+(1, 5, 6, '2026-01-07', 'disetujui'),
+(2, 1, 6, '2026-01-07', 'disetujui'),
+(3, 5, 7, '2026-01-07', 'disetujui');
 
 -- --------------------------------------------------------
 
@@ -199,7 +238,8 @@ CREATE TABLE `rombel` (
 --
 
 INSERT INTO `rombel` (`id_rombel`, `id_kelas`, `id_jurusan`, `nama_rombel`, `id_guru`) VALUES
-(1, 6, 1, 'RPL 12 ', 1);
+(1, 6, 1, 'RPL 12 ', 1),
+(3, 6, 2, 'AKL 12 ', 4);
 
 -- --------------------------------------------------------
 
@@ -220,7 +260,8 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`id_siswa`, `nis`, `nama_siswa`, `id_rombel`, `id_user`) VALUES
-(1, '23161014', 'Kevin Fernando', 1, 1);
+(1, '23161014', 'Kevin Fernando', 1, 1),
+(5, '23161012134', 'Ryuku', 3, 38);
 
 -- --------------------------------------------------------
 
@@ -250,8 +291,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `email`, `password`, `level`, `foto`, `created_at`, `created_by`, `updated_at`, `updated_by`, `deleted_at`, `deleted_by`, `token`, `expiry`) VALUES
-(1, 'KF', 'KF@gmail.com', 'f457c545a9ded88f18ecee47145a72c0', 3, NULL, '2025-04-07 18:44:53', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(2, 'Kalpas', 'Kalpas@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 3, NULL, '2026-01-07 09:32:20', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(1, 'KF', 'KF@gmail.com', 'f457c545a9ded88f18ecee47145a72c0', 1, NULL, '2025-04-07 18:44:53', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'Kalpas', 'Kalpas@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 2, NULL, '2026-01-07 09:32:20', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(36, 'Aponia', 'Aponia@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 2, NULL, '2026-01-07 18:31:12', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(38, 'Ryuku', 'Ryukusune@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 3, NULL, '2026-01-07 20:01:55', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(39, 'Elysia', 'elysia@gmail.com', 'c4ca4238a0b923820dcc509a6f75849b', 2, NULL, '2026-01-07 23:05:16', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -304,8 +348,7 @@ ALTER TABLE `level`
 -- Indexes for table `nilai_ekskul`
 --
 ALTER TABLE `nilai_ekskul`
-  ADD PRIMARY KEY (`id_nilai`),
-  ADD UNIQUE KEY `unik_nilai` (`id_daftar`);
+  ADD PRIMARY KEY (`id_nilai`);
 
 --
 -- Indexes for table `pendaftaran_ekskul`
@@ -341,25 +384,25 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `absensi_ekskul`
 --
 ALTER TABLE `absensi_ekskul`
-  MODIFY `id_absen` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_absen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `ekskul`
 --
 ALTER TABLE `ekskul`
-  MODIFY `id_ekskul` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_ekskul` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `guru`
 --
 ALTER TABLE `guru`
-  MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `jadwal_ekskul`
 --
 ALTER TABLE `jadwal_ekskul`
-  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `jurusan`
@@ -383,31 +426,31 @@ ALTER TABLE `level`
 -- AUTO_INCREMENT for table `nilai_ekskul`
 --
 ALTER TABLE `nilai_ekskul`
-  MODIFY `id_nilai` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_nilai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `pendaftaran_ekskul`
 --
 ALTER TABLE `pendaftaran_ekskul`
-  MODIFY `id_daftar` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_daftar` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `rombel`
 --
 ALTER TABLE `rombel`
-  MODIFY `id_rombel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_rombel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
