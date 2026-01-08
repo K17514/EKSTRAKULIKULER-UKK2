@@ -31,6 +31,12 @@
                         class="btn btn-success mb-3">
                         Export Excel
                     </a>
+                    <a href="<?= base_url('/printpenilaian?bulan=' . $current_month . '&mode=' . $mode) ?>"
+                        target="_blank"
+                        class="btn btn-secondary mb-3 ms-2">
+                        🖨️ Print Nilai
+                    </a>
+
 
 
 

@@ -139,10 +139,10 @@
                             <thead style="background-color:#A41F13; color:#ffffff;">
                                 <tr>
                                     <th>No<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search No"></th>
-                                    <th>Nis<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Nis"></th>
-                                    <th>Username<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Username"></th>
-                                    <th>Email<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Email"></th>
                                     <th>Nama Siswa<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Nama"></th>
+                                    <th>Nis<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Nis"></th>
+                                    <th>Jenis Kelamin<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Jenis Kelamin"></th>
+                                    <th>Tanggal Lahir<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Tanggal Lahir"></th>
                                     <th>Rombel<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Rombel"></th>
                                     <?php if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4) { ?>
                                         <th>Aksi</th>
@@ -156,10 +156,10 @@
                                 ?>
                                     <tr style="background-color: white;" onmouseover="this.style.backgroundColor='darkwhite'; this.style.color='black';" onmouseout="this.style.backgroundColor='white'; this.style.color='';">
                                         <td><?= $ms++ ?></td>
-                                        <td><?= $value->nis ?></td>
-                                        <td><?= $value->username ?></td>
-                                        <td><?= $value->email ?></td>
                                         <td><?= $value->nama_siswa ?></td>
+                                        <td><?= $value->nis ?></td>
+                                        <td><?= $value->jenis_kelamin ?></td>
+                                        <td><?= $value->tanggal_lahir ?></td>
                                         <td><?= $value->nama_rombel ?></td>
                                         <?php if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4) { ?>
                                             <td>
@@ -311,10 +311,10 @@
                             <thead style="background-color:#A41F13; color:#ffffff;">
                                 <tr>
                                     <th>No<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search No"></th>
-                                    <th>Nip<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Nip"></th>
-                                    <th>Username<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Username"></th>
-                                    <th>Email<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Email"></th>
                                     <th>Nama Guru<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Nama"></th>
+                                    <th>Nip<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Nip"></th>
+                                    <th>Jenis Kelamin<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Jenis Kelamin"></th>
+                                    <th>Tanggal Lahir<br><input type="text" class="form-control form-control-sm column-search" placeholder="Search Tanggal Lahir"></th>      
                                     <?php if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4) { ?>
                                         <th>Aksi</th>
                                     <?php } ?>
@@ -327,10 +327,10 @@
                                 ?>
                                     <tr style="background-color: white;" onmouseover="this.style.backgroundColor='darkwhite'; this.style.color='black';" onmouseout="this.style.backgroundColor='white'; this.style.color='';">
                                         <td><?= $ms++ ?></td>
-                                        <td><?= $value->nip ?></td>
-                                        <td><?= $value->username ?></td>
-                                        <td><?= $value->email ?></td>
                                         <td><?= $value->nama_guru ?></td>
+                                        <td><?= $value->nip ?></td>
+                                        <td><?= $value->jenis_kelamin ?></td>
+                                        <td><?= $value->tanggal_lahir ?></td>
                                         <?php if (session()->get('level') == 1 || session()->get('level') == 2 || session()->get('level') == 3 || session()->get('level') == 4) { ?>
                                             <td>
                                                 <a href="<?= base_url('/editguru/' . $value->id_guru) ?>" class="btn btn-warning btn-sm" style="background-color:#edb047; border:none;">

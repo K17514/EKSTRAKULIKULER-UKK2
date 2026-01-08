@@ -13,6 +13,11 @@ class M_siswa extends Model
         'nama_siswa',
         'id_rombel',
         'id_user',
+        'tempat_lahir',
+        'tanggal_lahir',
+        'alamat',
+        'no_hp',
+        'jenis_kelamin',
     ];
 
     protected $returnType = 'object';

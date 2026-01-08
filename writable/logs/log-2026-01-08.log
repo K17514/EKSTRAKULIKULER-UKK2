@@ -1,0 +1,332 @@
+CRITICAL - 2026-01-08 03:01:38 --> ErrorException: Undefined variable $siswa
+[Method: GET, Route: editguru/8]
+in APPPATH\Views\eguru.php on line 28.
+ 1 APPPATH\Views\eguru.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\eguru.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\eguru.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('eguru', [], true)
+ 5 APPPATH\Controllers\Guru.php(58): view('eguru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->editview('8')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-08 03:09:07 --> ErrorException: Undefined property: App\Controllers\Penilaian::$penilaianModel
+[Method: GET, Route: printpenilaian]
+in APPPATH\Controllers\Penilaian.php on line 229.
+ 1 APPPATH\Controllers\Penilaian.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Penilaian::$penilaianModel', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Controllers\\Penilaian.php', 229)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-08 03:10:33 --> ErrorException: Undefined property: App\Controllers\Penilaian::$mpenilaian
+[Method: GET, Route: printpenilaian]
+in APPPATH\Controllers\Penilaian.php on line 229.
+ 1 APPPATH\Controllers\Penilaian.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Penilaian::$mpenilaian', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Controllers\\Penilaian.php', 229)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-08 03:10:45 --> ErrorException: Undefined property: App\Controllers\Penilaian::$model
+[Method: GET, Route: printpenilaian]
+in APPPATH\Controllers\Penilaian.php on line 229.
+ 1 APPPATH\Controllers\Penilaian.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Penilaian::$model', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Controllers\\Penilaian.php', 229)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-08 03:11:04 --> ErrorException: Undefined property: stdClass::$nama_siswa
+[Method: GET, Route: printpenilaian]
+in APPPATH\Views\printpenilaian.php on line 50.
+ 1 APPPATH\Views\printpenilaian.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_siswa', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\printpenilaian.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Views\\printpenilaian.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1199): CodeIgniter\View\View->render('/printpenilaian', [], true)
+ 5 APPPATH\Controllers\Penilaian.php(232): view('/printpenilaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-08 03:12:03 --> ErrorException: Undefined property: App\Controllers\Penilaian::$db
+[Method: GET, Route: printpenilaian]
+in APPPATH\Controllers\Penilaian.php on line 228.
+ 1 APPPATH\Controllers\Penilaian.php(228): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Penilaian::$db', 'C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\app\\Controllers\\Penilaian.php', 228)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+ERROR - 2026-01-08 03:12:39 --> mysqli_sql_exception: Table 'ekstrakulikuler.daftar_ekskul' doesn't exist in C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.`nam...', 0)
+#1 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`nam...')
+#2 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`nam...')
+#3 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`nam...', Array, false)
+#4 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\app\Controllers\Penilaian.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+#6 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+#7 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\rewrite.php(44): require_once('C:\\Users\\user\\M...')
+#12 {main}
+CRITICAL - 2026-01-08 03:12:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstrakulikuler.daftar_ekskul' doesn't exist
+[Method: GET, Route: printpenilaian]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `daftar_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = :ne.bulan:
+AND `e`.`id_pembina` = :e.id_pembina:', [...], false)
+ 2 APPPATH\Controllers\Penilaian.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-08 03:12:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstrakulikuler.daftar_ekskul' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `daftar_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `daftar_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `daftar_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = :ne.bulan:
+AND `e`.`id_pembina` = :e.id_pembina:', [...], false)
+ 4 APPPATH\Controllers\Penilaian.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-08 03:12:39 --> [Caused by] mysqli_sql_exception: Table 'ekstrakulikuler.daftar_ekskul' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `daftar_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `daftar_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `daftar_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `daftar_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = :ne.bulan:
+AND `e`.`id_pembina` = :e.id_pembina:', [...], false)
+ 5 APPPATH\Controllers\Penilaian.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+ERROR - 2026-01-08 03:12:57 --> mysqli_sql_exception: Unknown column 'e.id_pembina' in 'where clause' in C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.`nam...', 0)
+#1 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`nam...')
+#2 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`nam...')
+#3 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`nam...', Array, false)
+#4 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\app\Controllers\Penilaian.php(252): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+#6 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+#7 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\rewrite.php(44): require_once('C:\\Users\\user\\M...')
+#12 {main}
+CRITICAL - 2026-01-08 03:12:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e.id_pembina' in 'where clause'
+[Method: GET, Route: printpenilaian]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `pendaftaran_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = :ne.bulan:
+AND `e`.`id_pembina` = :e.id_pembina:', [...], false)
+ 2 APPPATH\Controllers\Penilaian.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-08 03:12:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'e.id_pembina' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `pendaftaran_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `pendaftaran_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `pendaftaran_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = :ne.bulan:
+AND `e`.`id_pembina` = :e.id_pembina:', [...], false)
+ 4 APPPATH\Controllers\Penilaian.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+CRITICAL - 2026-01-08 03:12:57 --> [Caused by] mysqli_sql_exception: Unknown column 'e.id_pembina' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `pendaftaran_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `pendaftaran_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `pendaftaran_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = \'2026-01\'
+AND `e`.`id_pembina` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `s`.`nama_siswa`, `e`.`nama_ekskul`, `ne`.`nilai`, `ne`.`predikat`, `ne`.`catatan`
+FROM `nilai_ekskul` `ne`
+JOIN `pendaftaran_ekskul` `d` ON `d`.`id_daftar` = `ne`.`id_daftar`
+JOIN `siswa` `s` ON `s`.`id_siswa` = `d`.`id_siswa`
+JOIN `ekskul` `e` ON `e`.`id_ekskul` = `d`.`id_ekskul`
+WHERE `ne`.`bulan` = :ne.bulan:
+AND `e`.`id_pembina` = :e.id_pembina:', [...], false)
+ 5 APPPATH\Controllers\Penilaian.php(252): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penilaian->print()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penilaian))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')
+ERROR - 2026-01-08 05:28:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ekstrakulikuler', 3306, '', 0)
+#1 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\app\Controllers\Login.php(60): CodeIgniter\BaseModel->first()
+#7 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+#8 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\rewrite.php(44): require_once('C:\\Users\\user\\M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\app\Controllers\Login.php(60): CodeIgniter\BaseModel->first()
+#6 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+#7 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\user\Music\Engeline Chairine UKK\EKSTRAKULIKULER-UKK2\system\rewrite.php(44): require_once('C:\\Users\\user\\M...')
+#13 {main}
+CRITICAL - 2026-01-08 05:28:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(60): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\user\\Music\\Engeline Chairine UKK\\EKSTRAKULIKULER-UKK2\\public\\index.php')

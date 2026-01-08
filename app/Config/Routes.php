@@ -71,6 +71,7 @@ $routes->post('/absensi/update', 'Absensi::update');
 $routes->get('/penilaian', 'Penilaian::index');
 $routes->post('/penilaian/update', 'Penilaian::update');
 $routes->get('/penilaian/export', 'Penilaian::export');
+$routes->get('/printpenilaian', 'Penilaian::print');
 
 
 $routes->get('logout', 'Login::logout');

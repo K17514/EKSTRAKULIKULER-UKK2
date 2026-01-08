@@ -104,6 +104,36 @@
                 </select>
               </div>
 
+              <div class="mb-3">
+                <label class="form-label">Tempat Lahir</label>
+                <input type="text" class="form-control" name="tempat_lahir" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Tanggal Lahir</label>
+                <input type="date" class="form-control" name="tanggal_lahir" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Jenis Kelamin</label>
+                <select class="form-control" name="jenis_kelamin" required>
+                  <option value="">-- Pilih --</option>
+                  <option value="laki-laki">Laki-laki</option>
+                  <option value="perempuan">Perempuan</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">No HP</label>
+                <input type="text" class="form-control" name="no_hp" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Alamat</label>
+                <textarea class="form-control" name="alamat" rows="3" required></textarea>
+              </div>
+
+
               <hr>
 
               <h5>Data User</h5>
@@ -208,6 +238,35 @@
               <div class="mb-3">
                 <label class="form-label">Nama Guru</label>
                 <input type="text" class="form-control" name="nama_guru" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Tempat Lahir</label>
+                <input type="text" class="form-control" name="tempat_lahir" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Tanggal Lahir</label>
+                <input type="date" class="form-control" name="tanggal_lahir" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Jenis Kelamin</label>
+                <select class="form-control" name="jenis_kelamin" required>
+                  <option value="">-- Pilih --</option>
+                  <option value="laki-laki">Laki-laki</option>
+                  <option value="perempuan">Perempuan</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">No HP</label>
+                <input type="text" class="form-control" name="no_hp" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Alamat</label>
+                <textarea class="form-control" name="alamat" rows="3" required></textarea>
               </div>
 
               <hr>

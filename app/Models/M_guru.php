@@ -12,6 +12,11 @@ class M_guru extends Model
         'nip',
         'nama_guru',
         'id_user',
+        'tempat_lahir',
+        'tanggal_lahir',
+        'alamat',
+        'no_hp',
+        'jenis_kelamin',
     ];
 
     protected $returnType = 'object';

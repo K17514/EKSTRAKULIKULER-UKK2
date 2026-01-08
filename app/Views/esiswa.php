@@ -20,6 +20,57 @@
               </td>
             </tr>
             <tr>
+              <td style="padding-bottom: 10px;">
+                <label for="tempat_lahir">Tempat Lahir</label>
+              </td>
+              <td style="padding-bottom: 10px;">
+                <input type="text" class="form-control" name="tempat_lahir"
+                  value="<?= $siswa->tempat_lahir ?>">
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-bottom: 10px;">
+                <label for="tanggal_lahir">Tanggal Lahir</label>
+              </td>
+              <td style="padding-bottom: 10px;">
+                <input type="date" class="form-control" name="tanggal_lahir"
+                  value="<?= $siswa->tanggal_lahir ?>">
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-bottom: 10px;">
+                <label for="jenis_kelamin">Jenis Kelamin</label>
+              </td>
+              <td style="padding-bottom: 10px;">
+                <select class="form-control" name="jenis_kelamin">
+                  <option value="laki-laki" <?= ($siswa->jenis_kelamin == 'laki-laki') ? 'selected' : '' ?>>Laki-laki</option>
+                  <option value="perempuan" <?= ($siswa->jenis_kelamin == 'perempuan') ? 'selected' : '' ?>>Perempuan</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-bottom: 10px;">
+                <label for="no_hp">No HP</label>
+              </td>
+              <td style="padding-bottom: 10px;">
+                <input type="text" class="form-control" name="no_hp"
+                  value="<?= $siswa->no_hp ?>">
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-bottom: 10px;">
+                <label for="alamat">Alamat</label>
+              </td>
+              <td style="padding-bottom: 10px;">
+                <textarea class="form-control" name="alamat" rows="3"><?= $siswa->alamat ?></textarea>
+              </td>
+            </tr>
+
+            <tr>
               <td style="padding-bottom: 10px;"><label for="username" style="font-weight: 500; color: #292F36;">Username</label></td>
               <td style="padding-bottom: 10px;">
                 <input type="text" class="form-control" id="username" name="username" value="<?= $siswa->username ?>" style="border: 1px solid #8F7A6E; border-radius: 8px; padding: 0.6rem; width: 100%;">

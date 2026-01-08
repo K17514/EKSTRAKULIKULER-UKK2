@@ -15,29 +15,38 @@ class Siswa extends BaseController
         $this->muser = new M_login();
         $this->mrombel = new M_rombel();
     }
-
     public function input()
     {
         // 1. Insert ke tabel user
         $userData = [
             'username' => $this->request->getPost('username'),
             'email'    => $this->request->getPost('email'),
-            'password' => md5($this->request->getPost('password')), // disesuaikan dengan sistemmu
-            'level' => 3
+            'password' => md5($this->request->getPost('password')),
+            'level'    => 3
         ];
+
         $this->muser->insert($userData);
         $id_user = $this->muser->getInsertID();
+
+        // 2. Insert ke tabel siswa
         $siswaData = [
-            'nis'        => $this->request->getPost('nis'),
-            'nama_siswa' => $this->request->getPost('nama_siswa'),
-            'id_rombel'  => $this->request->getPost('id_rombel'),
-            'id_user'    => $id_user,
+            'nis'            => $this->request->getPost('nis'),
+            'nama_siswa'     => $this->request->getPost('nama_siswa'),
+            'id_rombel'      => $this->request->getPost('id_rombel'),
+            'id_user'        => $id_user,
+            'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
+            'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
+            'jenis_kelamin'  => $this->request->getPost('jenis_kelamin'),
+            'no_hp'          => $this->request->getPost('no_hp'),
+            'alamat'         => $this->request->getPost('alamat'),
         ];
 
         $this->model->insert($siswaData);
 
-        return redirect()->to('/tampildata')->with('success', 'Siswa dan user berhasil ditambahkan.');
+        return redirect()->to('/tampildata')
+            ->with('success', 'Siswa dan user berhasil ditambahkan.');
     }
+
 
     public function editview($id)
     {
@@ -59,31 +68,40 @@ class Siswa extends BaseController
     public function simpan()
     {
         $id_siswa = $this->request->getPost('id_siswa');
-        $id_user = $this->request->getPost('id_user');
+        $id_user  = $this->request->getPost('id_user');
 
-        // Update user table
+        // ================= USER =================
         $userData = [
             'username' => $this->request->getPost('username'),
             'email'    => $this->request->getPost('email'),
             'level'    => 3
         ];
+
         $password = $this->request->getPost('password');
         if (!empty($password)) {
-            $userData['password'] = MD5($password);
+            $userData['password'] = md5($password);
         }
+
         $this->muser->update($id_user, $userData);
 
-        // Update siswa table
+        // ================= SISWA =================
         $siswaData = [
-            'nis' => $this->request->getPost('nis'),
-            'nama_siswa' => $this->request->getPost('nama_siswa'),
-            'id_rombel' => $this->request->getPost('id_rombel'),
+            'nis'            => $this->request->getPost('nis'),
+            'nama_siswa'     => $this->request->getPost('nama_siswa'),
+            'id_rombel'      => $this->request->getPost('id_rombel'),
+            'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
+            'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
+            'jenis_kelamin'  => $this->request->getPost('jenis_kelamin'),
+            'no_hp'          => $this->request->getPost('no_hp'),
+            'alamat'         => $this->request->getPost('alamat'),
         ];
+
         $this->model->update($id_siswa, $siswaData);
 
         return redirect()->to('/tampildata')
-            ->with('success', 'Berhasil edit data.');
+            ->with('success', 'Berhasil edit data siswa.');
     }
+
 
     public function hapus($id)
     {

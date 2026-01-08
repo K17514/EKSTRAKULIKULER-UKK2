@@ -31,6 +31,11 @@ class Guru extends BaseController
             'nip'       => $this->request->getPost('nip'),
             'nama_guru' => $this->request->getPost('nama_guru'),
             'id_user'   => $id_user,
+            'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
+            'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
+            'jenis_kelamin'  => $this->request->getPost('jenis_kelamin'),
+            'no_hp'          => $this->request->getPost('no_hp'),
+            'alamat'         => $this->request->getPost('alamat'),
         ];
 
         $this->model->insert($guruData);
@@ -76,7 +81,11 @@ class Guru extends BaseController
         $guruData = [
             'nip' => $this->request->getPost('nip'),
             'nama_guru' => $this->request->getPost('nama_guru'),
-            'id_rombel' => $this->request->getPost('id_rombel'),
+            'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
+            'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
+            'jenis_kelamin'  => $this->request->getPost('jenis_kelamin'),
+            'no_hp'          => $this->request->getPost('no_hp'),
+            'alamat'         => $this->request->getPost('alamat'),
         ];
         $this->model->update($id_guru, $guruData);
 

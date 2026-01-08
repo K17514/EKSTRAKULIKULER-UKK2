@@ -6,11 +6,13 @@ use App\Models\M_daftar;
 use App\Models\M_nilai;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+use Config\Database;
 
 class Penilaian extends BaseController
 {
     public function __construct()
     {
+        $this->db = Database::connect();
         $this->mdaftar = new M_daftar();
         $this->mnilai = new M_nilai();
     }
@@ -60,71 +62,71 @@ class Penilaian extends BaseController
     // }
 
     public function index()
-{
-    $current_month = $this->request->getGet('bulan') ?? date('Y-m');
-    $is_locked = ($current_month < date('Y-m'));
+    {
+        $current_month = $this->request->getGet('bulan') ?? date('Y-m');
+        $is_locked = ($current_month < date('Y-m'));
 
-    $level   = session()->get('level');
-    $id_user = session()->get('id_user');
+        $level   = session()->get('level');
+        $id_user = session()->get('id_user');
 
-    if (!in_array($level, [1, 2, 3])) {
-        return redirect()->to('/');
-    }
+        if (!in_array($level, [1, 2, 3])) {
+            return redirect()->to('/');
+        }
 
-    // 🔥 MODE (toggle)
-    $mode = $this->request->getGet('mode') ?? 'ekskul';
+        // 🔥 MODE (toggle)
+        $mode = $this->request->getGet('mode') ?? 'ekskul';
 
-    if ($level == 2) {
-        $db = \Config\Database::connect();
+        if ($level == 2) {
+            $db = \Config\Database::connect();
 
-        $guru = $db->table('guru')
-            ->where('id_user', $id_user)
-            ->get()
-            ->getRow();
-
-        if ($guru) {
-            $wali = $db->table('rombel')
-                ->where('id_guru', $guru->id_guru)
+            $guru = $db->table('guru')
+                ->where('id_user', $id_user)
                 ->get()
                 ->getRow();
 
-            // default wali kelas → rombel
-            if ($wali && !$this->request->getGet('mode')) {
-                $mode = 'rombel';
+            if ($guru) {
+                $wali = $db->table('rombel')
+                    ->where('id_guru', $guru->id_guru)
+                    ->get()
+                    ->getRow();
+
+                // default wali kelas → rombel
+                if ($wali && !$this->request->getGet('mode')) {
+                    $mode = 'rombel';
+                }
             }
         }
+
+        // 🔥 ambil data pakai mode
+        $daftar = $this->mdaftar->DaftarDataByRole($level, $id_user, $mode);
+
+        // hanya yang disetujui
+        $approved = array_filter($daftar, function ($item) {
+            return $item->status === 'disetujui';
+        });
+
+        foreach ($approved as &$item) {
+            $nilai = $this->mnilai
+                ->where('id_daftar', $item->id_daftar)
+                ->where('bulan', $current_month)
+                ->first();
+
+            $item->nilai    = $nilai->nilai ?? null;
+            $item->predikat = $nilai->predikat ?? null;
+            $item->catatan  = $nilai->catatan ?? null;
+        }
+
+        $data = [
+            'daftar'        => $approved,
+            'current_month' => $current_month,
+            'is_locked'     => $is_locked,
+            'mode'          => $mode
+        ];
+
+        echo view('header');
+        echo view('menu');
+        echo view('penilaian', $data);
     }
-
-    // 🔥 ambil data pakai mode
-    $daftar = $this->mdaftar->DaftarDataByRole($level, $id_user, $mode);
-
-    // hanya yang disetujui
-    $approved = array_filter($daftar, function ($item) {
-        return $item->status === 'disetujui';
-    });
-
-    foreach ($approved as &$item) {
-        $nilai = $this->mnilai
-            ->where('id_daftar', $item->id_daftar)
-            ->where('bulan', $current_month)
-            ->first();
-
-        $item->nilai    = $nilai->nilai ?? null;
-        $item->predikat = $nilai->predikat ?? null;
-        $item->catatan  = $nilai->catatan ?? null;
-    }
-
-    $data = [
-        'daftar'        => $approved,
-        'current_month' => $current_month,
-        'is_locked'     => $is_locked,
-        'mode'          => $mode
-    ];
-
-    echo view('header');
-    echo view('menu');
-    echo view('penilaian', $data);
-}
 
 
     public function update()
@@ -218,5 +220,44 @@ class Penilaian extends BaseController
             echo "{$row['nama_siswa']}\t{$row['nama_ekskul']}\t{$row['nilai']}\t{$row['predikat']}\t{$row['catatan']}\n";
         }
         exit;
+    }
+
+    public function print()
+    {
+        $bulan = $this->request->getGet('bulan');
+        $mode  = $this->request->getGet('mode');
+
+        $builder = $this->db->table('nilai_ekskul ne')
+            ->select('
+            s.nama_siswa,
+            e.nama_ekskul,
+            ne.nilai,
+            ne.predikat,
+            ne.catatan
+        ')
+            ->join('pendaftaran_ekskul d', 'd.id_daftar = ne.id_daftar')
+            ->join('siswa s', 's.id_siswa = d.id_siswa')
+            ->join('ekskul e', 'e.id_ekskul = d.id_ekskul')
+            ->where('ne.bulan', $bulan);
+
+        if ($mode == 'rombel') {
+            $builder->where('s.id_rombel', session()->get('id_rombel'));
+        }
+
+        if ($mode == 'ekskul') {
+            $guru = $this->db->table('guru')
+                ->where('id_user', session()->get('id_user'))
+                ->get()
+                ->getRow();
+
+            if ($guru) {
+                $builder->where('e.id_instruktur', $guru->id_guru);
+            }
+        }
+
+        $data['daftar'] = $builder->get()->getResult();
+        $data['bulan']  = $bulan;
+
+        return view('printpenilaian', $data);
     }
 }
